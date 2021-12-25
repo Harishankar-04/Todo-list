@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: linear-gradient(to bottom,#5fa70d 1%,#12ad58 70%);
+    width: 100%;
+    height: 86vh;
+}
+.wrapper{
+    margin: 120px auto;
+    padding: 24px;
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .inputfield{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+    
+}
+.inputfield input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size:19px;
+    border-radius: 3px;
+}
+.wrapper .list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.inputfield button{
+    outline: none;
+    border: none;
+    color: aliceblue;
+    width: 10%;
+    background-color: #8f9719; 
+    font-size: 20px;
+    cursor:pointer;
+    margin-left: 4px;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputfield button.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.list li{
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: rgb(147, 207, 165);
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0px 15px;
+    overflow: hidden;
+    
+}
+.list li span{
+    position: absolute;
+    right: -40px;
+    color: rgb(233, 224, 224);
+    background-color: #0a87a7;
+    width: 45px;
+    text-align: center;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.list li:hover span{
+    right: 0px;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.footer button{
+    background-color: rgb(211, 18, 18);
+    color: aliceblue;
+    width: 50px;
+    font-size: 20px;
+    font-weight: 400;
+}
